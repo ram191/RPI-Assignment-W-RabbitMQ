@@ -965,11 +965,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/training/Projects/UsersService-RPI/UsersService/UsersService.csproj",
+      "projectUniqueName": "/Users/training/Projects/RPIAssignment/UsersService-RPI/UsersService/UsersService.csproj",
       "projectName": "UsersService",
-      "projectPath": "/Users/training/Projects/UsersService-RPI/UsersService/UsersService.csproj",
+      "projectPath": "/Users/training/Projects/RPIAssignment/UsersService-RPI/UsersService/UsersService.csproj",
       "packagesPath": "/Users/training/.nuget/packages/",
-      "outputPath": "/Users/training/Projects/UsersService-RPI/UsersService/obj/",
+      "outputPath": "/Users/training/Projects/RPIAssignment/UsersService-RPI/UsersService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/training/.nuget/NuGet/NuGet.Config"

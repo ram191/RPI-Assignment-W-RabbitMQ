@@ -44,7 +44,7 @@ namespace UsersService.Application.Commands
                 Title = "Welcome to brightfall",
                 Message = "Please bring a flashlight",
                 Type = "email",
-                From = 1,
+                From = 16,
                 Targets = new List<TargetCommand>() { target }
             };
 

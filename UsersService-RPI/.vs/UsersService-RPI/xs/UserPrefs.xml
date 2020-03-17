@@ -1,27 +1,21 @@
 ﻿<Properties StartupConfiguration="{2C6ED6C9-D4B6-44A1-B0E6-1D3461BC977F}|Default">
   <MonoDevelop.Ide.ItemProperties.UsersService PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UsersService/Model/Users.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UsersService/Application/Commands/PostUserCommandHandler.cs">
     <Files>
-      <File FileName="UsersService/Model/Users.cs" Line="13" Column="2" />
-      <File FileName="UsersService/appsettings.json" />
-      <File FileName="UsersService/Startup.cs" />
-      <File FileName="UsersService/Model/UserContext.cs" />
-      <File FileName="UsersService/Model/BaseDTO.cs" />
-      <File FileName="UsersService/Application/Queries/GetUsersDTO.cs" />
-      <File FileName="UsersService/Application/Queries/GetUsersQuery.cs" />
-      <File FileName="UsersService/Application/Queries/GetUsersQueryHandler.cs" />
-      <File FileName="UsersService/Application/Queries/GetUserByIdDTO.cs" />
-      <File FileName="UsersService/Application/Queries/GetUserByIdQuery.cs" />
-      <File FileName="UsersService/Application/Queries/GetUserByIdQueryHandler.cs" />
+      <File FileName="UsersService/Application/Commands/PostUserCommandHandler.cs" Line="60" Column="71" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UsersService-RPI" expanded="True">
             <Node name="UsersService" expanded="True">
-              <Node name="Model" expanded="True">
-                <Node name="Users.cs" selected="True" />
+              <Node name="Application" expanded="True">
+                <Node name="Commands" expanded="True">
+                  <Node name="PostUserCommandHandler.cs" selected="True" />
+                </Node>
+                <Node name="Queries" expanded="True" />
               </Node>
+              <Node name="Model" expanded="True" />
             </Node>
           </Node>
         </State>
