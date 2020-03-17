@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{AFEFFF2C-65A4-45B5-B4DF-E8C887350D59}|Default">
+  <MonoDevelop.Ide.ItemProperties.RemoteProcedureInvokation FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RemoteProcedureInvokation/Model/Users.cs">
+    <Files>
+      <File FileName="RemoteProcedureInvokation/Model/Notification.cs" Line="13" Column="1" />
+      <File FileName="RemoteProcedureInvokation/Model/NotificationLogs.cs" Line="17" Column="1" />
+      <File FileName="RemoteProcedureInvokation/Model/Users.cs" Line="7" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RemoteProcedureInvokation" expanded="True">
+            <Node name="RemoteProcedureInvokation" expanded="True">
+              <Node name="Model" expanded="True">
+                <Node name="Users.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

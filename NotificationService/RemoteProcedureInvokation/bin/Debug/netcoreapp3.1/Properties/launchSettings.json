@@ -1,0 +1,21 @@
+{
+  "profiles": {
+    "RemoteProcedureInvokation": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "notification",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5002"
+    },
+    "NotificationService": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}

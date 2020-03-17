@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{AFEFFF2C-65A4-45B5-B4DF-E8C887350D59}|RemoteProcedureInvokation">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NotificationService-RPI" expanded="True">
+            <Node name="NotificationService" expanded="True">
+              <Node name="Application" expanded="True">
+                <Node name="Commands" expanded="True" />
+                <Node name="Queries" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="NotificationController.cs" selected="True" />
+              </Node>
+              <Node name="Model" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.NotificationService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
