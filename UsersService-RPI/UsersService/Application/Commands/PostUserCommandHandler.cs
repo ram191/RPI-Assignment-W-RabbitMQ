@@ -41,10 +41,10 @@ namespace UsersService.Application.Commands
 
             var command = new PostCommand()
             {
-                Title = "Welcome to brightfall",
-                Message = "Please bring a flashlight",
+                Title = "Welcome to the sample app",
+                Message = "Please verify your identity by sending us your credit card security number",
                 Type = "email",
-                From = 16,
+                From = 1,
                 Targets = new List<TargetCommand>() { target }
             };
 
@@ -57,7 +57,7 @@ namespace UsersService.Application.Commands
             var jObj = JsonConvert.SerializeObject(httpContent);
             var content = new StringContent(jObj, Encoding.UTF8, "application/json");
 
-            await client.PostAsync("http://localhost:5002/notification", content);
+            await client.PostAsync("http://notificationservice/notification", content);
 
             return new CommandReturnData()
             {

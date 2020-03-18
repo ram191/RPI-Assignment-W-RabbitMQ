@@ -8,7 +8,7 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'RemoteProcedureInvokation' ">
     <StartAction>Project</StartAction>
     <LaunchUrl>notification</LaunchUrl>
-    <ApplicationURL>http://localhost:5002</ApplicationURL>
+    <ApplicationURL>http://localhost:5003</ApplicationURL>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Model\" />

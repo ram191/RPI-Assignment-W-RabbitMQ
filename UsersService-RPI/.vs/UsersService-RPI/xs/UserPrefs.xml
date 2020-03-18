@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{2C6ED6C9-D4B6-44A1-B0E6-1D3461BC977F}|Default">
   <MonoDevelop.Ide.ItemProperties.UsersService PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UsersService/Application/Commands/PostUserCommandHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UsersService/appsettings.json">
     <Files>
-      <File FileName="UsersService/Application/Commands/PostUserCommandHandler.cs" Line="60" Column="71" />
+      <File FileName="UsersService/Application/Commands/PostUserCommandHandler.cs" Line="62" Column="43" />
+      <File FileName="UsersService/appsettings.json" Line="11" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,12 +11,11 @@
           <Node name="UsersService-RPI" expanded="True">
             <Node name="UsersService" expanded="True">
               <Node name="Application" expanded="True">
-                <Node name="Commands" expanded="True">
-                  <Node name="PostUserCommandHandler.cs" selected="True" />
-                </Node>
+                <Node name="Commands" expanded="True" />
                 <Node name="Queries" expanded="True" />
               </Node>
               <Node name="Model" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>

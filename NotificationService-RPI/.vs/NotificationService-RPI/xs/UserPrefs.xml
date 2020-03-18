@@ -1,11 +1,26 @@
 ﻿<Properties StartupConfiguration="{AFEFFF2C-65A4-45B5-B4DF-E8C887350D59}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotificationService/Application/Commands/PostNotificationCommandHandler.cs">
+    <Files>
+      <File FileName="NotificationService/Program.cs" Line="1" Column="1" />
+      <File FileName="NotificationService/Controllers/NotificationController.cs" Line="1" Column="1" />
+      <File FileName="NotificationService/Application/Commands/PostNotificationCommandHandler.cs" Line="70" Column="1" />
+      <File FileName="NotificationService/Startup.cs" Line="1" Column="1" />
+      <File FileName="NotificationService/appsettings.json" Line="1" Column="1" />
+      <File FileName="NotificationService/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="NotificationService/Application/Commands/PutNotificationCommandHandler.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NotificationService-RPI" expanded="True">
             <Node name="NotificationService" expanded="True">
-              <Node name="Dependencies" selected="True" />
+              <Node name="Application" expanded="True">
+                <Node name="Commands" expanded="True">
+                  <Node name="PostNotificationCommandHandler.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
