@@ -72,7 +72,7 @@ namespace NotificationService.Application.Commands
         public async Task<List<User>> GetUserData()
         {
             var client = new HttpClient();
-            var data = await client.GetStringAsync("http://usersservice/users");
+            var data = await client.GetStringAsync("http://localhost:4000/users");
             return JsonConvert.DeserializeObject<List<User>>(data);
         }
 

@@ -78,3 +78,4 @@
 /Users/training/Projects/RPIAssignment/UsersService-RPI/UsersService/obj/Debug/netcoreapp3.1/staticwebassets/UsersService.StaticWebAssets.xml
 /Users/training/Projects/RPIAssignment/UsersService-RPI/UsersService/obj/Debug/netcoreapp3.1/UsersService.dll
 /Users/training/Projects/RPIAssignment/UsersService-RPI/UsersService/obj/Debug/netcoreapp3.1/UsersService.pdb
+/Users/training/Projects/RPIAssignment/UsersService-RPI/UsersService/bin/Debug/netcoreapp3.1/RabbitMQ.Client.dll

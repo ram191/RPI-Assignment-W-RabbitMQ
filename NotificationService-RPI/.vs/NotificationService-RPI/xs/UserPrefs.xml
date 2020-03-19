@@ -1,13 +1,23 @@
 ﻿<Properties StartupConfiguration="{AFEFFF2C-65A4-45B5-B4DF-E8C887350D59}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NotificationService/Application/Commands/PostNotificationCommandHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotificationService/Controllers/NotificationController.cs">
     <Files>
-      <File FileName="NotificationService/Program.cs" Line="1" Column="1" />
-      <File FileName="NotificationService/Controllers/NotificationController.cs" Line="1" Column="1" />
-      <File FileName="NotificationService/Application/Commands/PostNotificationCommandHandler.cs" Line="70" Column="1" />
-      <File FileName="NotificationService/Startup.cs" Line="1" Column="1" />
-      <File FileName="NotificationService/appsettings.json" Line="1" Column="1" />
-      <File FileName="NotificationService/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="NotificationService/Application/Commands/PutNotificationCommandHandler.cs" Line="1" Column="1" />
+      <File FileName="NotificationService/Program.cs" Line="31" Column="1" />
+      <File FileName="NotificationService/Controllers/NotificationController.cs" Line="56" Column="10" />
+      <File FileName="NotificationService/Application/Commands/PostNotificationCommandHandler.cs" />
+      <File FileName="NotificationService/Startup.cs" />
+      <File FileName="NotificationService/appsettings.json" />
+      <File FileName="NotificationService/Properties/launchSettings.json" />
+      <File FileName="NotificationService/Application/Commands/PutNotificationCommandHandler.cs" />
+      <File FileName="NotificationService/Model/NotificationLogs.cs" />
+      <File FileName="NotificationService/Model/NotificationContext.cs" />
+      <File FileName="NotificationService/Model/Users.cs" />
+      <File FileName="NotificationService/Model/Notification.cs" />
+      <File FileName="NotificationService/Model/BaseDTO.cs" />
+      <File FileName="../../../.nuget/packages/hangfire/1.7.9/readme.txt" />
+      <File FileName="NotificationService/Application/Queries/GetNotificationByIdDTO.cs" />
+      <File FileName="NotificationService/Application/Queries/GetNotificationByIdHandler.cs" />
+      <File FileName="NotificationService/Application/Queries/GetNotificationsHandler.cs" />
+      <File FileName="NotificationService/Application/Queries/GetNotificationsWLogsHandler.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,11 +25,13 @@
           <Node name="NotificationService-RPI" expanded="True">
             <Node name="NotificationService" expanded="True">
               <Node name="Application" expanded="True">
-                <Node name="Commands" expanded="True">
-                  <Node name="PostNotificationCommandHandler.cs" selected="True" />
-                </Node>
+                <Node name="Commands" expanded="True" />
+                <Node name="Queries" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="NotificationController.cs" selected="True" />
+              </Node>
+              <Node name="Model" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>
           </Node>

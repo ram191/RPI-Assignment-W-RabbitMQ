@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Newtonsoft.Json;
 using UsersService.Model;
+using RabbitMQ.Client;
 
 namespace UsersService.Application.Commands
 {
@@ -39,7 +40,7 @@ namespace UsersService.Application.Commands
             var user = _context.Users.First(x => x.Username == request.Data.Attributes.Username);
             var target = new TargetCommand() { Id = user.Id, Email_destination = user.Email };
 
-            var command = new PostCommand()
+            PostCommand command = new PostCommand()
             {
                 Title = "Welcome to the sample app",
                 Message = "Please verify your identity by sending us your credit card security number",
@@ -55,9 +56,24 @@ namespace UsersService.Application.Commands
             { Data = attributes };
 
             var jObj = JsonConvert.SerializeObject(httpContent);
-            var content = new StringContent(jObj, Encoding.UTF8, "application/json");
 
-            await client.PostAsync("http://notificationservice/notification", content);
+            //RabbitMq Producer
+            var factory = new ConnectionFactory() { HostName = "some-rabbit" };
+            using (var connection = factory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+                channel.ExchangeDeclare("userDataExchange", "fanout");
+
+                var body = Encoding.UTF8.GetBytes(jObj);
+
+                channel.BasicPublish(
+                    exchange: "",
+                                routingKey: "userData",
+                                basicProperties: null,
+                                body: body
+                                );
+                Console.WriteLine("User data has been forwarded");
+            }
 
             return new CommandReturnData()
             {
