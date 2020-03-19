@@ -17,3 +17,7 @@ RabbitMQ service plays a role to solve the emerging problem by acting as a media
 Usersservice does not care whether the destination service is running or not, it only sends the messages to the broker(exchange) and continues the job. The exchange will then keep the messages until it is being pulled by the consumer/subscriber. The messages kept by the broker can be seen in the RabbitMQ Management Client (in this case it's on http://localhost:8080). It will hold the status of 'ready' as long as the messages are not being pulled by the consumer/subscriber. At this point, the messages are no longer dependant on both services so it is safe now to stop both services.
 
 Consuming the message is as easy as producing the message. We basically just have to tell the consumer which exchange are we going to consumer from, deserialize the message back to a string, and do anything we want with it. In this project, the message is converted into a HttpContent so it can be used as a body in a Http Post method.
+
+## Where's the authentication?
+
+The authentication for accessing the notificationservice is set on the Kong gateway service. The kong configuration file is available on this repository.
