@@ -5,7 +5,7 @@
 
 # Description
 
-This is a RESTAPI project on testing how message broker service works as a bridge connection between one service an others.
+This is a RESTAPI project on testing how message broker service works as a bridge connection between each services.
 The project is separated into two services namely "notificationservice" and "userservice". Both services are connected to each other through the RabbitMQ services contained in both service. For now, the usersservice holds the producer role and the notificationservice functions as the consumer.
 
 ## How does RabbitMQ work here?
