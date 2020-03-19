@@ -1,0 +1,236 @@
+_format_version: "1.1"
+services:
+- connect_timeout: 60000
+  host: customerservice
+  name: cardservice
+  path: /customerpaymentcard
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  write_timeout: 60000
+  routes:
+  - id: c0944ad0-1d63-4608-b4a9-651cb2059494
+    paths:
+    - /api/card
+    path_handling: v0
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    strip_path: true
+    https_redirect_status_code: 426
+    plugins:
+    - name: jwt
+      config:
+        anonymous: null
+        claims_to_verify: null
+        cookie_names: []
+        header_names:
+        - authorization
+        key_claim_name: iss
+        maximum_expiration: 0
+        run_on_preflight: true
+        secret_is_base64: false
+        uri_param_names:
+        - jwt
+      enabled: true
+      protocols:
+      - grpc
+      - grpcs
+      - http
+      - https
+- connect_timeout: 60000
+  host: customerservice
+  name: customerservice
+  path: /customer
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  write_timeout: 60000
+  routes:
+  - id: c24d9018-7ec9-4c39-9882-9247ebfec08a
+    paths:
+    - /api/customer
+    path_handling: v0
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    strip_path: true
+    https_redirect_status_code: 426
+    plugins:
+    - name: jwt
+      config:
+        anonymous: null
+        claims_to_verify: null
+        cookie_names: []
+        header_names:
+        - authorization
+        key_claim_name: iss
+        maximum_expiration: 0
+        run_on_preflight: true
+        secret_is_base64: false
+        uri_param_names:
+        - jwt
+      enabled: true
+      protocols:
+      - grpc
+      - grpcs
+      - http
+      - https
+- connect_timeout: 60000
+  host: mockbin.org
+  name: example-service
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  write_timeout: 60000
+  routes:
+  - id: 4d341a6d-a00a-475b-8750-d9bad4629360
+    paths:
+    - /test
+    path_handling: v0
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    strip_path: true
+    https_redirect_status_code: 426
+- connect_timeout: 60000
+  host: merchantservice
+  name: merchantservice
+  path: /merchant
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  write_timeout: 60000
+  routes:
+  - id: b0e0309f-8cb4-4d41-a9fb-16846e6838c2
+    paths:
+    - /api/merchant
+    path_handling: v0
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    strip_path: true
+    https_redirect_status_code: 426
+    plugins:
+    - name: basic-auth
+      config:
+        anonymous: null
+        hide_credentials: false
+      enabled: true
+      protocols:
+      - grpc
+      - grpcs
+      - http
+      - https
+- connect_timeout: 60000
+  host: notificationservice
+  name: notificationservice
+  path: /notification
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  write_timeout: 60000
+  routes:
+  - id: ac72bbb1-8b45-4a0c-866b-e61f73c47967
+    paths:
+    - /notification
+    path_handling: v0
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    strip_path: true
+    https_redirect_status_code: 426
+    plugins:
+    - name: basic-auth
+      config:
+        anonymous: null
+        hide_credentials: false
+      enabled: true
+      protocols:
+      - grpc
+      - grpcs
+      - http
+      - https
+- connect_timeout: 60000
+  host: productservice
+  name: productservice
+  path: /product
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  write_timeout: 60000
+  routes:
+  - id: 9e63fe98-b997-46ba-8af3-5f6076a3ece3
+    paths:
+    - /api/product
+    path_handling: v0
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    strip_path: true
+    https_redirect_status_code: 426
+    plugins:
+    - name: key-auth
+      config:
+        anonymous: null
+        hide_credentials: false
+        key_in_body: false
+        key_names:
+        - apikey
+        run_on_preflight: true
+      enabled: true
+      protocols:
+      - grpc
+      - grpcs
+      - http
+      - https
+- connect_timeout: 60000
+  host: usersservice
+  name: usersservice
+  path: /users
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  write_timeout: 60000
+  routes:
+  - id: 891ccba0-f7df-44e7-91e1-94102cf29194
+    paths:
+    - /users
+    path_handling: v0
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    strip_path: true
+    https_redirect_status_code: 426
+consumers:
+- username: john
+  keyauth_credentials:
+  - key: dGNQp6idHQZXiK7JACm3krUQm8UaCIwH
+  jwt_secrets:
+  - algorithm: HS256
+    key: TXkowxYH7sSlp13sUwLzEwZqfCd43ihJ
+    secret: AYlg9h4CoXhngV4cRT7OaKzhYRCBzUTw
+  basicauth_credentials:
+  - username: johndoe
+    password: ea836f8461f351fd494fcfa2a3aaa44087391d96
