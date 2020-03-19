@@ -1,8 +1,7 @@
 # Required docker images for this project
 
-- Services' docker image:
-docker push ram191/usersservice:latest
-docker push ram191/usersservice:latest
+- docker push ram191/usersservice:latest
+- docker push ram191/usersservice:latest
 
 # Description
 
