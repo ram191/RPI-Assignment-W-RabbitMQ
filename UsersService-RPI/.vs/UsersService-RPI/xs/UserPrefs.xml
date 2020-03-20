@@ -2,10 +2,11 @@
   <MonoDevelop.Ide.ItemProperties.UsersService PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="UsersService/Application/Commands/PostUserCommandHandler.cs">
     <Files>
-      <File FileName="UsersService/Application/Commands/PostUserCommandHandler.cs" Line="61" Column="15" />
+      <File FileName="UsersService/Application/Commands/PostUserCommandHandler.cs" Line="70" Column="48" />
       <File FileName="UsersService/appsettings.json" />
       <File FileName="UsersService/Program.cs" />
       <File FileName="UsersService/Model/NotificationLogs.cs" />
+      <File FileName="UsersService/Startup.cs" Line="36" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{AFEFFF2C-65A4-45B5-B4DF-E8C887350D59}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NotificationService/Controllers/NotificationController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotificationService/Startup.cs">
     <Files>
       <File FileName="NotificationService/Program.cs" Line="31" Column="1" />
-      <File FileName="NotificationService/Controllers/NotificationController.cs" Line="56" Column="10" />
+      <File FileName="NotificationService/Controllers/NotificationController.cs" />
       <File FileName="NotificationService/Application/Commands/PostNotificationCommandHandler.cs" />
-      <File FileName="NotificationService/Startup.cs" />
+      <File FileName="NotificationService/Startup.cs" Line="105" Column="3" />
       <File FileName="NotificationService/appsettings.json" />
       <File FileName="NotificationService/Properties/launchSettings.json" />
       <File FileName="NotificationService/Application/Commands/PutNotificationCommandHandler.cs" />
@@ -28,11 +28,10 @@
                 <Node name="Commands" expanded="True" />
                 <Node name="Queries" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="NotificationController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Model" expanded="True" />
               <Node name="Properties" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

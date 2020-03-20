@@ -63,15 +63,18 @@ namespace UsersService.Application.Commands
             using (var channel = connection.CreateModel())
             {
                 channel.ExchangeDeclare("userDataExchange", "fanout");
+                channel.QueueDeclare("userData", true, false, false, null);
+
+                channel.QueueBind("userData", "userDataExchange", string.Empty);
 
                 var body = Encoding.UTF8.GetBytes(jObj);
 
                 channel.BasicPublish(
-                    exchange: "",
-                                routingKey: "userData",
-                                basicProperties: null,
-                                body: body
-                                );
+                    exchange: "userDataExchange",
+                    routingKey: "",
+                    basicProperties: null,
+                    body: body
+                    );
                 Console.WriteLine("User data has been forwarded");
             }
 

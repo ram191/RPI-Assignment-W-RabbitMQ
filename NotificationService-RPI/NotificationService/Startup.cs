@@ -82,9 +82,8 @@ namespace NotificationService
             using (var channel = connection.CreateModel())
             {
                 channel.ExchangeDeclare("userDataExchange", "fanout");
-                    
-                var queueName = channel.QueueDeclare();
-                channel.QueueBind(queueName, "userDataExchange", string.Empty);
+                channel.QueueDeclare("userData", true, false, false, null);
+                channel.QueueBind("userData", "userDataExchange", string.Empty);
 
                 var consumer = new EventingBasicConsumer(channel);
                 consumer.Received += async (model, ea) =>
@@ -92,9 +91,16 @@ namespace NotificationService
                     var body = ea.Body;
                     var message = Encoding.UTF8.GetString(body);
                     var content = new StringContent(message, Encoding.UTF8, "application/json");
-                    Console.WriteLine($"Processing data from queue");
-                    await client.PostAsync("http://notificationservice/notification", content);
-  
+                    if (content != null)
+                    {
+
+                        Console.WriteLine($"Processing data from queue");
+                        await client.PostAsync("http://notificationservice/notification", content);
+                    }
+                    else
+                    {
+                        Console.WriteLine("No data");
+                    }
                 };
                 channel.BasicConsume(queue: "userData",
                                      autoAck: true,
